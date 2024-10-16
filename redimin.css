@@ -1,0 +1,173 @@
+/*celular*/
+
+@media screen and (max-width: 767px) {
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    .produtos .produto {
+        margin-bottom: 32px;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+
+    .submenu {
+        display: none;   
+        width: 100%;
+        border: none;
+    }
+    .menu{
+        display: none;
+    }
+    .menu > li {
+        clear: both;
+    }
+    
+    .submenu li a{
+        display: block;
+        padding: 8px;
+    }
+
+    .botao-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .botao-menu button {
+        padding: 8px;
+        border-radius: 8px;
+        margin-top: 8px;
+    }
+
+    .container-flex, 
+    .contato {
+    display: block; 
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+    }
+
+    .rodape {
+        display: flex;
+        padding: 16px;
+    } 
+
+    .rodape li img {
+        max-width: 100%;  
+        width: 35px;
+        height: 35px;
+    }
+
+    .sobre-loja {
+        display: block;
+        align-items: center;
+        margin: 0 16px;
+    }
+
+    .container p {
+        margin: 8px;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    header .menu {
+        display: flex;
+        margin-right: 25px;
+        align-items: center;
+    }
+
+    .menu > li {
+        width: 170px;
+        margin: 0 8px;
+    }
+
+    .menu h3 {
+        margin-bottom: 8px;
+    }
+
+    .submenu {
+        border-radius: 16px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contato img{
+        width: 250px;
+        height: 250px;
+        margin-bottom: 8px;
+    }
+
+}
+
+
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container {
+        max-width: 90%;
+    }
+
+    .botao-menu {
+        display: none;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2,49%);
+    }
+
+    .sobre-loja {
+        display: block;
+        align-items: center;
+        margin: 0 16px;
+    }
+
+    .contato img{
+        width: 250px;
+        height: 250px;
+        margin-bottom: 8px;
+    }
+
+    .form-contato {
+        display: none;
+        background-color: #b69072;
+        width: 250px;
+        max-width: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+    .botao-menu {
+        display: none;
+    }
+}
+
+
+@keyframes border-color-animation {
+    0% {
+        border-color: yellow;
+    }
+    50% {
+        border-color: blue;
+    }
+    75% {
+        border-color: green;
+    }
+    100% {
+        border-color: yellow;
+    }
+}

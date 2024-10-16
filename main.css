@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    }
+    
+    a:visited {
+    color: inherit;
+    text-decoration: none; 
+    }
+    
+body {
+    background-color: #8c918d7c;
+}
+
+img {
+    border-radius: 8px;
+}
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+    background-color: #3a3a3a;
+    color: #fff;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+.container h1 {
+    margin-top: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.sobre-loja h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+.adicionar-carrinho button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+}
+
+section h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+
+.menu h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+.menu > li {
+    float: right;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+    width: 140px;
+}
+
+.clear {
+    clear: both;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu a:hover {
+    font-size: 16px;
+}
+
+.menu li:hover {
+    border-color: rgb(54, 0, 0);
+}
+
+.submenu {
+    background-color: rgb(228, 228, 228);
+    color: black;
+    top: 100%; /* Posiciona o submenu logo abaixo do item do menu */
+    width: 100%;
+    text-align: center;
+    display: none;
+    position: absolute;
+    z-index: 10; /* Garante que o submenu fique acima de outros elementos */
+    left: 0;
+}
+
+.submenu li {
+    display: block;
+    width: 100%; 
+    padding-top: 12px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.produto img {
+    width: 100%;
+    padding: 8px;
+    border-radius: 16px;
+}
+
+.produto {
+    background-color: #777574;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+section h2 {
+    margin-top: 4%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3,32.6%);
+    column-gap: 1%;
+    row-gap: 1%;
+    margin-bottom: 20px;
+}
+
+/*Sobre a loja*/
+.sobre-loja {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.sobre-loja img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.linha {
+    border: none; 
+    height: 2px;
+    background-color: #333; 
+    margin-bottom: 5%;
+}
+
+.content-sobre {
+    margin: 16px;
+}
+
+.content-sobre h2{
+        margin-bottom: 8px;
+}
+
+footer {
+    background-color: #181717;
+    padding-top: 16px;
+    color: rgb(19, 18, 18);
+}
+
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    color: #fff;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+
+.contato {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-empresa img {
+    width: 350px;
+    height: 350px;
+    max-width: 100%;
+    border-radius: 50%;
+    border: solid;
+}
+
+.form-contato {
+    display: none;
+    background-color: #585858;
+    width: 350px;
+    max-width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 8px;
+}
+
+.floating-icon {
+    position: fixed;
+    right: 70px; 
+    bottom: 50px; 
+    z-index: 1000;
+    background-color: #b4b4b4;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.floating-icon h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+.rodape li {
+    margin: 8px;
+}
+
+.rodape li img {
+    max-width: 100%;  
+    width: 50px;
+    height: 50px;
+}
+
+.botoes-carrinho {
+    display: none;
+    justify-content: space-between;
+    margin-top: 8px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.botoes-carrinho img {
+    justify-content: space-between;
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+}
+
+.form-contato input, textarea {
+    border-radius: 8px;
+}
+
+.container-flex, 
+.contato {
+    display: flex; 
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.contatoOpcoes{
+    width: 100%;
+    max-width: 100%;
+    padding: 32px;
+    background-color: #1d1c1b;;
+    border-radius: 8px;
+    margin-bottom: 56px;
+}
+
+.form-campo {
+    margin-bottom: 8px;
+}
+
+.form-campo label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+    border: none;
+}
+
+.form-campo textarea {
+    resize: none;
+}
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    border-radius: 16px;
+    padding: 8px;
+    border: none;
+}
+
+.botao-cadastro button {
+    padding: 8px;
+    border-radius: 16px;
+    animation: border-color-animation 3s infinite linear;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+    align-items: center;
+}
+
+.price strong {
+    margin-right: auto;
+}
+
+.price .size-circle {
+    margin-left: 8px; 
+}
+
+.produto button {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    border: 1px solid #161616;
+    cursor: pointer;
+    height: 40px;
+    overflow: hidden; /* Garante que nada saia da área do botão */
+    transition: font-size 0.3s ease;
+}
+
+.size-circle {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border: 1px solid rgb(26, 25, 25);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.tamanho {
+    margin-right: 8px;
+}
+
+.size-circle:hover {
+    background-color: rgb(59, 59, 59);
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.size-circle.selected {
+    background-color: rgb(39, 39, 39); 
+    color: white; 
+}
+
+.produto:hover img {
+    background-color: #312721;
+}
+
+.produto button:hover {
+    background-color: #312924; 
+    pointer-events: auto;
+    color: #fff;
+    font-size: 16px;
+    overflow: hidden;
+}
